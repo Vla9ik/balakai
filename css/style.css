@@ -341,7 +341,6 @@ h6 {
   z-index: 10;
   color: rgb(43, 53, 65);
   font-family: Houschka Rounded;
-  font-size: 27px;
   font-weight: 700;
   line-height: 150%;
   max-width: 27.5rem;
@@ -1578,6 +1577,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     font-size: 2.75rem;
   }
 
+  .presentation__text p {
+    font-size: 1.6875rem;
+  }
+
   .advantages__images {
     margin-top: 11.25rem;
   }
@@ -1675,6 +1678,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .title {
     font-size: 1.5rem;
+  }
+
+  .presentation__text p {
+    font-size: 1rem;
   }
 
   .advantages__images {
@@ -1885,6 +1892,18 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 }
 
+@media (max-width: 34.375em) {
+  .presentation__slider {
+    max-width: 13.4375rem;
+  }
+}
+
+@media (max-width: 29.99875em) {
+  .advantages__image {
+    width: 100%;
+  }
+}
+
 @media (min-width: 20em) and (max-width: 66.25em) {
 @supports ((-moz-column-gap: clamp( 1.25rem , 0.4391891892rem  +  4.0540540541vw , 3.125rem )) or (column-gap: clamp( 1.25rem , 0.4391891892rem  +  4.0540540541vw , 3.125rem ))) {
     .menu {
@@ -1911,6 +1930,18 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 @supports not (font-size: clamp( 1.5rem , 0.9594594595rem  +  2.7027027027vw , 2.75rem )) {
     .title {
       font-size: calc(1.5rem + 1.25 * (100vw - 20rem) / 46.25);
+    }
+}
+
+@supports (font-size: clamp( 1rem , 0.7027027027rem  +  1.4864864865vw , 1.6875rem )) {
+    .presentation__text p {
+      font-size: clamp( 1rem , 0.7027027027rem  +  1.4864864865vw , 1.6875rem );
+    }
+}
+
+@supports not (font-size: clamp( 1rem , 0.7027027027rem  +  1.4864864865vw , 1.6875rem )) {
+    .presentation__text p {
+      font-size: calc(1rem + 0.6875 * (100vw - 20rem) / 46.25);
     }
 }
 
