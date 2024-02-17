@@ -954,12 +954,6 @@ body::after {
   padding: 1.5625rem;
   border-radius: 22px;
   position: relative;
-  aspect-ratio: 1145/700;
-  -o-object-fit: contain;
-     object-fit: contain;
-  width: 100%;
-  /* 1145/1030 */
-  height: 100%;
 }
 
 .partnership__inner {
@@ -2005,6 +1999,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .partnership__container {
     background: url("../img/partnership/cloud.svg") 0 0/100% no-repeat;
+    aspect-ratio: 1145/700;
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 100%;
+    /* 1145/1030 */
+    height: 100%;
   }
 }
 
