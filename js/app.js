@@ -3921,8 +3921,6 @@
                 spaceBetween: 0,
                 speed: 1,
                 effect: "fade",
-                crossFade: true,
-                loop: true,
                 navigation: {
                     prevEl: ".reviews__prev",
                     nextEl: ".reviews__next"
